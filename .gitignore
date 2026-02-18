@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+manifest
+spec
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit
+.streamlit/
+static/
+
+# Environment variables
+.env
+.venv
+
+# Data and Models (if you want to keep them local and generate on server)
+# In this case, the batch file suggests they are generated if missing
+# but for a stable deploy it's often better to include them if they are static 
+# or generate them during build.
+# For now, I'll exclude the large model files and the data that can be regenerated.
+# models/bga_predictor.pkl
+# models/random_forest_model.pkl
+
+# VS Code
+.vscode/
