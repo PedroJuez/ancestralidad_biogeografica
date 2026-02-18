@@ -13,6 +13,12 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 import pickle
+import sklearn
+import sklearn.ensemble
+import sklearn.preprocessing
+import sklearn.svm
+import sklearn.linear_model
+import sklearn.naive_bayes
 from pathlib import Path
 
 # Obtener directorio base del proyecto
