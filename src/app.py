@@ -642,7 +642,10 @@ def main():
         3. **Poblaciones mezcladas**: Las predicciones son menos precisas en individuos 
            con ancestralidad mixta reciente.
         
-        4. **Datos sintéticos**: Este demo utiliza datos generados basados en frecuencias 
+        4. **Uso responsable**: Esta herramienta es para fines educativos y de investigación. 
+           Su uso en contextos legales requiere validación adicional y consideraciones éticas.
+        
+        5. **Datos sintéticos**: Este demo utiliza datos generados basados en frecuencias 
            alélicas publicadas, no datos reales de pacientes.
         """)
 
