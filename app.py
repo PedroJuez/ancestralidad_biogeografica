@@ -22,7 +22,7 @@ import sklearn.naive_bayes
 from pathlib import Path
 
 # Obtener directorio base del proyecto
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 MODELS_DIR = BASE_DIR / "models"
 
