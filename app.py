@@ -19,6 +19,9 @@ import sklearn.preprocessing
 import sklearn.svm
 import sklearn.linear_model
 import sklearn.naive_bayes
+import sklearn.tree
+import sklearn.utils
+import sklearn.metrics
 from pathlib import Path
 
 # Obtener directorio base del proyecto
