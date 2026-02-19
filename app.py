@@ -22,6 +22,9 @@ import sklearn.naive_bayes
 import sklearn.tree
 import sklearn.utils
 import sklearn.metrics
+import sklearn.neighbors
+import sklearn.decomposition
+import sklearn.pipeline
 from pathlib import Path
 
 # Obtener directorio base del proyecto
@@ -223,9 +226,14 @@ def load_model():
     """Carga el modelo entrenado."""
     model_path = MODELS_DIR / "bga_predictor.pkl"
     if model_path.exists():
-        with open(model_path, 'rb') as f:
-            data = pickle.load(f)
-        return data
+        try:
+            with open(model_path, 'rb') as f:
+                data = pickle.load(f)
+            return data
+        except Exception as e:
+            st.error(f"Error cargando el modelo: {str(e)}")
+            st.exception(e)
+            return None
     return None
 
 
