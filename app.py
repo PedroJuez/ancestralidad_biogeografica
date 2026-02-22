@@ -390,6 +390,9 @@ def main():
         **Modelo:** Random Forest  
         **Precisión:** ~96.6%  
         **Poblaciones:** 5 grupos continentales
+        
+        ---
+        **Creado por:** Pedro Juez Martel
         """)
     
     # Inicializar genotipos si no existen
@@ -654,8 +657,19 @@ def main():
            con ancestralidad mixta reciente.
         
         4. **Datos sintéticos**: Este demo utiliza datos generados basados en frecuencias 
-           alélicas publicadas, no datos reales de pacientes.
+            alélicas publicadas, no datos reales de pacientes.
         """)
+
+    # Footer
+    st.markdown("---")
+    st.markdown(
+        """
+        <div style="text-align: center; color: #5a6c7d; font-size: 0.9rem; padding: 1rem;">
+            Creado por <b>Pedro Juez Martel</b> | 🧬 Predictor de Ancestralidad Biogeográfica
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 
 if __name__ == "__main__":

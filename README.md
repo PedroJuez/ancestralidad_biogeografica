@@ -52,6 +52,14 @@ Se abrirá automáticamente en tu navegador en `http://localhost:8501`
 
 ---
 
+## 🌐 Acceso Web
+
+La aplicación está desplegada y disponible de forma pública en:
+
+**[https://3ufuqkzgsxpmwjzplzvrhx.streamlit.app/](https://3ufuqkzgsxpmwjzplzvrhx.streamlit.app/)**
+
+---
+
 ## Estructura del Proyecto
 
 ```
@@ -62,9 +70,9 @@ ancestralidad_biogeografica/
 │   ├── training_data.csv      # Datos de entrenamiento (1500 muestras)
 │   ├── test_data.csv          # Datos de prueba (350 muestras)
 │   └── feature_names.json     # Lista de marcadores
-├── models/                    
+├── models/
 │   └── bga_predictor.pkl      # Modelo entrenado
-├── src/                       
+├── src/
 │   ├── generate_data.py       # Generador de datos sintéticos
 │   ├── model.py               # Entrenamiento del modelo ML
 │   └── app.py                 # Aplicación Streamlit
@@ -88,13 +96,13 @@ Si solo quieres ver la demostración sin instalar nada:
 
 ### Poblaciones de Referencia
 
-| Código | Población | Regiones |
-|--------|-----------|----------|
-| AFR | Africana | África Subsahariana |
-| EUR | Europea | Europa Occidental, Oriental, Mediterránea |
-| EAS | Este Asiática | China, Japón, Corea, Mongolia |
-| SAS | Sur Asiática | India, Pakistán, Bangladesh |
-| AMR | Americana (mezclada) | Latinoamérica |
+| Código | Población            | Regiones                                  |
+| ------ | -------------------- | ----------------------------------------- |
+| AFR    | Africana             | África Subsahariana                       |
+| EUR    | Europea              | Europa Occidental, Oriental, Mediterránea |
+| EAS    | Este Asiática        | China, Japón, Corea, Mongolia             |
+| SAS    | Sur Asiática         | India, Pakistán, Bangladesh               |
+| AMR    | Americana (mezclada) | Latinoamérica                             |
 
 ### Rendimiento del Modelo
 
@@ -140,6 +148,7 @@ print(f"Confianza: {result['confidence']:.1%}")
 ### Error: "No se encontraron los datos de entrenamiento"
 
 Ejecuta primero:
+
 ```bash
 python src/generate_data.py
 ```
@@ -147,6 +156,7 @@ python src/generate_data.py
 ### Error: "No se pudo cargar el modelo"
 
 Ejecuta:
+
 ```bash
 python src/model.py
 ```
